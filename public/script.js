@@ -1135,7 +1135,7 @@ modal.show = function (cell, no_push_state) {
     div_modal.style.transform = "translate(0px, 0px) scale(1)";
   }, 50);
   modal.is_open = true; // flag for the keyboard event
-};
+};backToMenu
 
 modal.hide = function () {
   backToGame();

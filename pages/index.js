@@ -1437,9 +1437,9 @@ img, iframe {
       </div>
 
       <div id="teams">
-        <a className="menu-picker" href="javascript:backToMenu('menu')">
+        <span dangerouslySetInnerHTML={{__html: `<a class="menu-picker" href="javascript:backToMenu('menu')">
           M<br />e<br />n<br />u
-        </a>
+    </a>`}}></span>
         <div
           style={{
             display: "flex",
