@@ -12,7 +12,7 @@ export default (req, res) => {
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
   
-      <title>HTML Jeopardy Jeopardy Template</title>
+      <title>Jeopardy</title>
       <meta
         name="description"
         content="Defines the number of pixels of space between a cell’s contents and the cell wall. , are useful when you want to arrange text and images in order to make the information straightforward and clear to the Web page visitor.
