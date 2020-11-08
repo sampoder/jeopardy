@@ -1,7 +1,20 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
-  res.statusCode = 200
+export default async (req, res) => {
+  res.statusCode = 200;
+  const dataset = await fetch("http://localhost:3000/example.json").then((r) =>
+    r.json()
+  );
+  let totalLength = 9999
+  dataset.sets.map(
+    ({name, questions}) =>{
+      console.log(questions.length)
+      if (totalLength > questions.length){
+        totalLength = questions.length
+      }
+    }
+  )
+  console.log(totalLength);
   res.send(`<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -2177,35 +2190,16 @@ export default (req, res) => {
       <div id="gameplay">
         <div class="grid grid-play" style="height: 100vh">
           <div class="grid-row grid-row-cats" style="">
-            <div class="grid-cell" data-row="0" data-col="0">
-              <div class="cell">
-                <div class="cell-inner cat-cell">Tables</div>
-              </div>
-            </div>
-  
-            <div class="grid-cell" data-row="0" data-col="1">
-              <div class="cell">
-                <div class="cell-inner cat-cell">Image Maps</div>
-              </div>
-            </div>
-  
-            <div class="grid-cell" data-row="0" data-col="2">
-              <div class="cell">
-                <div class="cell-inner cat-cell">Forms</div>
-              </div>
-            </div>
-  
-            <div class="grid-cell" data-row="0" data-col="3">
-              <div class="cell">
-                <div class="cell-inner cat-cell">CSS</div>
-              </div>
-            </div>
-  
-            <div class="grid-cell" data-row="0" data-col="4">
-              <div class="cell">
-                <div class="cell-inner cat-cell">Multimedia</div>
-              </div>
-            </div>
+          ${dataset.sets.map(
+            ({name}) =>
+              `<div class="grid-cell" data-row="0" data-col="0"> 
+                <div class="cell" style="padding-top: 0px;">
+                  <div class="cell-inner cat-cell" style="font-size: 32px; transform: scale(1);">
+                    ${name}
+                  </div>
+                </div>
+              </div>`
+          )}
           </div>
   
           <div class="grid-row grid-row-questions grid-first-row">
@@ -2666,8 +2660,8 @@ export default (req, res) => {
               <option value="0">No teams</option>
               <option value="1">1 team</option>
               <option value="2">2 teams</option>
-              <option value="3" selected="true">3 teams</option>
-              <option value="4">4 teams</option>
+              <option value="3">3 teams</option>
+              <option value="4" selected="true">4 teams</option>
               <option value="5">5 teams</option>
               <option value="6">6 teams</option>
               <option value="7">7 teams</option>
@@ -2734,5 +2728,5 @@ export default (req, res) => {
       </script>
     </body>
   </html>
-  `)
-}
+  `);
+};
