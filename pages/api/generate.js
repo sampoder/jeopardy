@@ -2,20 +2,20 @@
 
 export default async (req, res) => {
   res.statusCode = 200;
-  const dataset = await fetch("https://raw.githubusercontent.com/sampoder/jeopardy/main/public/example.json").then((r) =>
-    r.json()
-  );
-  let totalLength = 9999
-  dataset.sets.map(
-    ({name, questions}) =>{
-      console.log(questions.length)
-      if (totalLength > questions.length){
-        totalLength = questions.length
-      }
+  const dataset = await fetch(
+    "https://raw.githubusercontent.com/sampoder/jeopardy/main/public/example.json"
+  ).then((r) => r.json());
+  let totalLength = 9999;
+  let lengths = [];
+  dataset.sets.map(({ name, questions }) => {
+    console.log(questions.length);
+    if (totalLength > questions.length) {
+      totalLength = questions.length;
+      lengths.push(questions.length);
     }
-  )
+  });
   console.log(totalLength);
-  res.send(`<!DOCTYPE html>
+  res.send((`<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <meta charset="utf-8" />
@@ -2191,422 +2191,100 @@ export default async (req, res) => {
         <div class="grid grid-play" style="height: 100vh">
           <div class="grid-row grid-row-cats" style="">
           ${dataset.sets.map(
-            ({name}) =>
+            ({ name }) =>
               `<div class="grid-cell" data-row="0" data-col="0"> 
                 <div class="cell" style="padding-top: 0px;">
                   <div class="cell-inner cat-cell" style="font-size: 32px; transform: scale(1);">
-                    ${name}
+                    ${name} 
                   </div>
                 </div>
               </div>`
           )}
           </div>
   
-          <div class="grid-row grid-row-questions grid-first-row">
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615098"
-              data-row="1"
-              data-col="0"
-            >
-              <div class="cell points">
-                <div class="cell-inner">100</div>
-                <div class="front answer">
-                  Defines the number of pixels of space between a cell’s contents
-                  and the cell wall.
-                </div>
-                <div class="back question">What is cell padding</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615108"
-              data-row="1"
-              data-col="1"
-            >
-              <div class="cell points">
-                <div class="cell-inner">100</div>
-                <div class="front answer">
-                  You insert the coordinates for the various map shapes in the
-                  <area /> tag in the _________________________ code.
-                </div>
-                <div class="back question">What is HTML</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615118"
-              data-row="1"
-              data-col="2"
-            >
-              <div class="cell points">
-                <div class="cell-inner">100</div>
-                <div class="front answer">
-                  In a(n) ____________________ box, a visitor may enter larger
-                  amounts of data.
-                </div>
-                <div class="back question">What is a text area</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615128"
-              data-row="1"
-              data-col="3"
-            >
-              <div class="cell points">
-                <div class="cell-inner">100</div>
-                <div class="front answer">
-                  An external style sheet must be saved as a(n) ____ file.
-                </div>
-                <div class="back question">What is .css</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615138"
-              data-row="1"
-              data-col="4"
-            >
-              <div class="cell points">
-                <div class="cell-inner">100</div>
-                <div class="front answer">
-                  ____________________ is defined as the combination of text,
-                  sound, and video to express an idea or convey a message.
-                </div>
-                <div class="back question">What is multimedia</div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="grid-row grid-row-questions">
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615100"
-              data-row="2"
-              data-col="0"
-            >
-              <div class="cell points">
-                <div class="cell-inner">200</div>
-                <div class="front answer">
-                  are useful when you want to arrange text and images in order to
-                  make the information straightforward and clear to the Web page
-                  visitor.
-                </div>
-                <div class="back question">What are tables</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615110"
-              data-row="2"
-              data-col="1"
-            >
-              <div class="cell points">
-                <div class="cell-inner">200</div>
-                <div class="front answer">
-                  A(n) _________________________ tag is used to define the
-                  clickable areas within a element, as well as links and anchors.
-                </div>
-                <div class="back question">What is <area /></div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615120"
-              data-row="2"
-              data-col="2"
-            >
-              <div class="cell points">
-                <div class="cell-inner">200</div>
-                <div class="front answer">
-                  A(n) ____________________ control creates a list item in a list
-                  from which more than one item can be chosen.
-                </div>
-                <div class="back question">What is a checkbox</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615130"
-              data-row="2"
-              data-col="3"
-            >
-              <div class="cell points">
-                <div class="cell-inner">200</div>
-                <div class="front answer">
-                  A(n) ____ style sheet is used to change the style within an
-                  individual HTML tag.
-                </div>
-                <div class="back question">What is inline</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615140"
-              data-row="2"
-              data-col="4"
-            >
-              <div class="cell points">
-                <div class="cell-inner">200</div>
-                <div class="front answer">
-                  File ____________________ can result in smaller file size.
-                </div>
-                <div class="back question">What is compression</div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="grid-row grid-row-questions">
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615102"
-              data-row="3"
-              data-col="0"
-            >
-              <div class="cell points">
-                <div class="cell-inner">300</div>
-                <div class="front answer">
-                  A heading cell displays text as bold and ____.
-                </div>
-                <div class="back question">What is centered</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615112"
-              data-row="3"
-              data-col="1"
-            >
-              <div class="cell points">
-                <div class="cell-inner">300</div>
-                <div class="front answer">
-                  Before coding the image map, you must map the image ____ for
-                  each
-                </div>
-                <div class="back question">What are coordinates</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615122"
-              data-row="3"
-              data-col="2"
-            >
-              <div class="cell points">
-                <div class="cell-inner">300</div>
-                <div class="front answer">
-                  The ____________________ button sends the information to the
-                  appropriate location for processing.
-                </div>
-                <div class="back question">What is submit</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615132"
-              data-row="3"
-              data-col="3"
-            >
-              <div class="cell points">
-                <div class="cell-inner">300</div>
-                <div class="front answer">
-                  To link a style sheet to a Web page, the tag must use
-                  "____________________" as the value for the rel property.
-                </div>
-                <div class="back question">What is stylesheet</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615142"
-              data-row="3"
-              data-col="4"
-            >
-              <div class="cell points">
-                <div class="cell-inner">300</div>
-                <div class="front answer">
-                  One of the most popular formats for music storage
-                </div>
-                <div class="back question">What is mp3</div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="grid-row grid-row-questions">
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615104"
-              data-row="4"
-              data-col="0"
-            >
-              <div class="cell points">
-                <div class="cell-inner">400</div>
-                <div class="front answer">
-                  There are ____ main HTML tags used to create a table.
-                </div>
-                <div class="back question">What is four</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615114"
-              data-row="4"
-              data-col="1"
-            >
-              <div class="cell points">
-                <div class="cell-inner">400</div>
-                <div class="front answer">
-                  The __ -axis runs vertically on the image.
-                </div>
-                <div class="back question">What is the y axis</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615124"
-              data-row="4"
-              data-col="2"
-            >
-              <div class="cell points">
-                <div class="cell-inner">400</div>
-                <div class="front answer">
-                  The use of asterisks, for example, to mark the entered text in
-                  this kind of field is designed to help protect text from being
-                  observed as it is being entered
-                </div>
-                <div class="back question">What is a password</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615134"
-              data-row="4"
-              data-col="3"
-            >
-              <div class="cell points">
-                <div class="cell-inner">400</div>
-                <div class="front answer">
-                  The ____________________ area surrounds the page area, and is
-                  transparent.
-                </div>
-                <div class="back question">What is a margin</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615144"
-              data-row="4"
-              data-col="4"
-            >
-              <div class="cell points">
-                <div class="cell-inner">400</div>
-                <div class="front answer">
-                  Its sound quality is not as good as other formats
-                </div>
-                <div class="back question">What is Real Audio</div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="grid-row grid-row-questions grid-last-row">
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615106"
-              data-row="5"
-              data-col="0"
-            >
-              <div class="cell points">
-                <div class="cell-inner">500</div>
-                <div class="front answer">
-                  A ____ is a horizontal line of information.
-                </div>
-                <div class="back question">What is a row</div>
-              </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615116"
-              data-row="5"
-              data-col="1"
-            >
-              <div class="cell points">
-                <div class="cell-inner">500</div>
-                <div class="front answer">
-                  When an image is used as a link, the entire image becomes the
-                  ____ area, also called the hotspot.
-                </div>
-                <div class="back question">
-                  What is a clickable area or clickable element
+          ${dataset.sets.map(
+            ({ name}, index) =>
+              `<div class="grid-row grid-row-questions ${index == 0 ? 'grid-first-row' : ''}">
+              <div
+                class="cell-group grid-cell"
+                id="cell-112615098"
+                data-row="${index+1}"
+                data-col="0"
+              >
+                <div class="cell points">
+                  <div class="cell-inner">100</div>
+                  <div class="front answer">
+                    Defines the number of pixels of space between a cell’s contents
+                    and the cell wall.
+                  </div>
+                  <div class="back question">What is cell padding</div>
                 </div>
               </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615126"
-              data-row="5"
-              data-col="2"
-            >
-              <div class="cell points">
-                <div class="cell-inner">500</div>
-                <div class="front answer">
-                  Nearly all of the HTML tags used to create forms have at most
-                  one of these each
+    
+              <div
+                class="cell-group grid-cell"
+                id="cell-112615108"
+                data-row="1"
+                data-col="1"
+              >
+                <div class="cell points">
+                  <div class="cell-inner">100</div>
+                  <div class="front answer">
+                    You insert the coordinates for the various map shapes in the
+                    <area /> tag in the _________________________ code.
+                  </div>
+                  <div class="back question">What is HTML</div>
                 </div>
-                <div class="back question">What is an attribute</div>
               </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615136"
-              data-row="5"
-              data-col="3"
-            >
-              <div class="cell points">
-                <div class="cell-inner">500</div>
-                <div class="front answer">
-                  Used to add special effects to some selectors
+    
+              <div
+                class="cell-group grid-cell"
+                id="cell-112615118"
+                data-row="1"
+                data-col="2"
+              >
+                <div class="cell points">
+                  <div class="cell-inner">100</div>
+                  <div class="front answer">
+                    In a(n) ____________________ box, a visitor may enter larger
+                    amounts of data.
+                  </div>
+                  <div class="back question">What is a text area</div>
                 </div>
-                <div class="back question">What is a pseudoclass</div>
               </div>
-            </div>
-  
-            <div
-              class="cell-group grid-cell"
-              id="cell-112615146"
-              data-row="5"
-              data-col="4"
-            >
-              <div class="cell points">
-                <div class="cell-inner">500</div>
-                <div class="front answer">
-                  A Java ____ is a program written in the Java programming
-                  language that can be included in a Web page.
+    
+              <div
+                class="cell-group grid-cell"
+                id="cell-112615128"
+                data-row="1"
+                data-col="3"
+              >
+                <div class="cell points">
+                  <div class="cell-inner">100</div>
+                  <div class="front answer">
+                    An external style sheet must be saved as a(n) ____ file.
+                  </div>
+                  <div class="back question">What is .css</div>
                 </div>
-                <div class="back question">What is an applet</div>
               </div>
-            </div>
-          </div>
-  
+    
+              <div
+                class="cell-group grid-cell"
+                id="cell-112615138"
+                data-row="1"
+                data-col="4"
+              >
+                <div class="cell points">
+                  <div class="cell-inner">300</div>
+                  <div class="front answer">
+                    ____________________ is defined as the combination of text,
+                    sound, and video to express an idea or convey a message.
+                  </div>
+                  <div class="back question">What is multimedia</div>
+                </div>
+              </div>
+            </div>`
+          ).join('')}
           <div class="click-to-zoom">
             <span>Click to zoom</span>
           </div>
@@ -2708,25 +2386,7 @@ export default async (req, res) => {
           </div>
         </div>
       </div>
-  
-      <script type="text/javascript">
-        var gaJsHost =
-          "https:" == document.location.protocol ? "https://ssl." : "http://www.";
-        document.write(
-          unescape(
-            "%3Cscript src='" +
-              gaJsHost +
-              "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"
-          )
-        );
-      </script>
-      <script type="text/javascript">
-        try {
-          var pageTracker = _gat._getTracker("UA-6553843-3");
-          pageTracker._trackPageview();
-        } catch (err) {}
-      </script>
     </body>
   </html>
-  `);
+  `).replace('</div>,<div', '</div><div'));
 };
