@@ -2,7 +2,7 @@
 
 export default async (req, res) => {
   res.statusCode = 200;
-  const dataset = await fetch("http://localhost:3000/example.json").then((r) =>
+  const dataset = await fetch("https://raw.githubusercontent.com/sampoder/jeopardy/main/public/example.json").then((r) =>
     r.json()
   );
   let totalLength = 9999
