@@ -2,9 +2,7 @@
 
 export default async (req, res) => {
   res.statusCode = 200;
-  const dataset = await fetch(
-    "https://raw.githubusercontent.com/sampoder/jeopardy/main/public/example.json"
-  ).then((r) => r.json());
+  const dataset = await fetch(req.query.url).then((r) => r.json());
   let totalLength = 9999;
   let lengths = [];
   dataset.sets.map(({ name, questions }) => {
@@ -48,7 +46,6 @@ export default async (req, res) => {
         type="image/x-icon"
       />
   
-      <base href="https://jeopardylabs.com" />
   
       <style type="text/css">
         /*!
@@ -1809,7 +1806,7 @@ export default async (req, res) => {
         initial_state = { page: "menu" };
   
         try {
-          history.replaceState(initial_state, "JeopardyLabs");
+          history.replaceState(initial_state, "Jeopardy");
         } catch (e) {}
   
         game.first_render = true;
@@ -1893,7 +1890,7 @@ export default async (req, res) => {
           resize();
   
           try {
-            history.pushState({ page: "game" }, "JeopardyLabs");
+            history.pushState({ page: "game" }, "Jeopardy");
           } catch (e) {}
   
           game.first_render = false;
@@ -2069,7 +2066,7 @@ export default async (req, res) => {
               console.log("pre length", window.history.length);
               history.pushState(
                 { page: "slide", cell: cell.getAttribute("id") },
-                "JeopardyLabs"
+                "Jeopardy"
               );
               console.log("post length", window.history.length);
             } catch (e) {}
@@ -2276,7 +2273,7 @@ export default async (req, res) => {
   
       <div id="options" class="modal-wrapper">
         <div class="modal">
-          <h1>Jeopardy with Student Council</h1>
+          <h1>${dataset.title}</h1>
           <div id="team-chooser-wrapper">
             <select id="team-chooser">
               <option value="0">No teams</option>
