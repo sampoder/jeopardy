@@ -25,27 +25,6 @@ export default async (req, res) => {
       />
   
       <title>Jeopardy</title>
-      <meta
-        name="description"
-        content="Defines the number of pixels of space between a cell’s contents and the cell wall. , are useful when you want to arrange text and images in order to make the information straightforward and clear to the Web page visitor.
-  , A heading cell displays text as bold and ____., There are ____ main HTML tags used to create a table."
-      />
-      <meta name="ROBOTS" content="NOODP" />
-      <meta
-        name="google-site-verification"
-        content="UYS7arlGlbDobqQSsucWwkbZyiC-6_cCWlUn9Eb5b2M"
-      />
-      <link
-        rel="shortcut icon"
-        href="/static/1601833824/favicon.ico"
-        type="image/x-icon"
-      />
-      <link
-        rel="icon"
-        href="/static/1601833824/favicon.ico"
-        type="image/x-icon"
-      />
-  
   
       <style type="text/css">
         /*!
