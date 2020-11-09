@@ -2653,7 +2653,7 @@
 
     <div id="options" class="modal-wrapper">
       <div class="modal">
-        <h1>Jeopardy with Student Council</h1>
+        <h1>JSON to Jeopardy</h1>
 
         <div id="team-chooser-wrapper">
           <form action="/api/generate">
@@ -2664,9 +2664,12 @@
               style="margin-bottom: 5px; width: 200px"
               placeholder="JSON URL"
             />
-            <input class="submit" type="submit" id="submit" value="Start" />
+            <input style="margin-top: 7px;" class="submit" type="submit" id="submit" value="Start" />
           </form>
         </div>
+        <p style="margin-top: 7px;"> 
+          Built by <a href="https://sampoder.com">Sam Poder</a>.
+        </p>
         <script>
           if (window.navigator.platform.indexOf("Mac") == 0) {
             document.getElementById("fullscreen").style.display = "block";
