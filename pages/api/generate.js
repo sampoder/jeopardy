@@ -15,7 +15,8 @@ export default async (req, res) => {
     }
   });
   console.log(totalLength);
-  res.send((`<!DOCTYPE html>
+  res.send(
+    `<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <meta charset="utf-8" />
@@ -2202,89 +2203,33 @@ export default async (req, res) => {
           )}
           </div>
   
-          ${dataset.sets.map(
-            ({ name}, index) =>
-              `<div class="grid-row grid-row-questions ${index == 0 ? 'grid-first-row' : ''}">
+          ${dataset.scores
+            .map(
+              (value, index) =>
+                `<div class="grid-row grid-row-questions ${
+                  index == 0 ? "grid-first-row" : ""
+                }">${dataset.sets
+                  .map(
+                    ({ questions }) => `
               <div
                 class="cell-group grid-cell"
                 id="cell-112615098"
-                data-row="${index+1}"
+                data-row="${index + 1}"
                 data-col="0"
               >
                 <div class="cell points">
-                  <div class="cell-inner">100</div>
+                  <div class="cell-inner">${dataset.scores[index]}</div>
                   <div class="front answer">
-                    Defines the number of pixels of space between a cell’s contents
-                    and the cell wall.
+                   ${questions[index].answer}
                   </div>
-                  <div class="back question">What is cell padding</div>
+                  <div class="back question">${questions[index].question}</div>
                 </div>
               </div>
-    
-              <div
-                class="cell-group grid-cell"
-                id="cell-112615108"
-                data-row="1"
-                data-col="1"
-              >
-                <div class="cell points">
-                  <div class="cell-inner">100</div>
-                  <div class="front answer">
-                    You insert the coordinates for the various map shapes in the
-                    <area /> tag in the _________________________ code.
-                  </div>
-                  <div class="back question">What is HTML</div>
-                </div>
-              </div>
-    
-              <div
-                class="cell-group grid-cell"
-                id="cell-112615118"
-                data-row="1"
-                data-col="2"
-              >
-                <div class="cell points">
-                  <div class="cell-inner">100</div>
-                  <div class="front answer">
-                    In a(n) ____________________ box, a visitor may enter larger
-                    amounts of data.
-                  </div>
-                  <div class="back question">What is a text area</div>
-                </div>
-              </div>
-    
-              <div
-                class="cell-group grid-cell"
-                id="cell-112615128"
-                data-row="1"
-                data-col="3"
-              >
-                <div class="cell points">
-                  <div class="cell-inner">100</div>
-                  <div class="front answer">
-                    An external style sheet must be saved as a(n) ____ file.
-                  </div>
-                  <div class="back question">What is .css</div>
-                </div>
-              </div>
-    
-              <div
-                class="cell-group grid-cell"
-                id="cell-112615138"
-                data-row="1"
-                data-col="4"
-              >
-                <div class="cell points">
-                  <div class="cell-inner">300</div>
-                  <div class="front answer">
-                    ____________________ is defined as the combination of text,
-                    sound, and video to express an idea or convey a message.
-                  </div>
-                  <div class="back question">What is multimedia</div>
-                </div>
-              </div>
-            </div>`
-          ).join('')}
+            `
+                  )
+                  .join("")}</div>`
+            )
+            .join("")}
           <div class="click-to-zoom">
             <span>Click to zoom</span>
           </div>
@@ -2331,8 +2276,7 @@ export default async (req, res) => {
   
       <div id="options" class="modal-wrapper">
         <div class="modal">
-          <h1>HTML Jeopardy</h1>
-  
+          <h1>Jeopardy with Student Council</h1>
           <div id="team-chooser-wrapper">
             <select id="team-chooser">
               <option value="0">No teams</option>
@@ -2376,17 +2320,10 @@ export default async (req, res) => {
               document.getElementById("windows").style.display = "inline";
             }
           </script>
-  
-          <div align="center" id="menu-links">
-            <a
-              href="https://jeopardylabs.com/edit/html-jeopardy-44"
-              rel="nofollow"
-              >Edit</a
-            >
-          </div>
         </div>
       </div>
     </body>
   </html>
-  `).replace('</div>,<div', '</div><div'));
+  `.replace("</div>,<div", "</div><div")
+  );
 };
