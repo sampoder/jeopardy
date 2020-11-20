@@ -1,7 +1,7 @@
 {
   "sets": [
     {
-      "name": "Sam",
+      "name": "Food",
       "questions": [
         {
           "answer": "This person was a judge for the cooking show the Great British Bake Off from 2010 to 2016 but left with Sue Perkins and Mel Giedroyc when the show was moved to Channel 4 from the BBC channel and was succeeded by Prue Leith.",
@@ -52,9 +52,9 @@
         },
 
         {
-          "answer": "A video game created by a swedish developer in 2011 with two main game modes, survival and creative."
-        },
-        { "answer": "What is Minecraft?" }
+          "answer": "A video game created by a Swedish developer in 2011 with two main game modes, survival and creative.",
+          "question": "What is Minecraft?"
+        }
       ]
     },
     {
@@ -62,7 +62,7 @@
       "questions": [
         {
           "answer": "This sport originated in England during the 12th century, where citizens would play in meadows and roads by kicking and punching a ball. This invasion game has the most fans in the world with 3.5 billion estimated fans!",
-          "question": "What is Soccer or Football?"
+          "question": "What is Soccer?"
         },
 
         {
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "name": "Sam",
+      "name": "Singapore",
       "questions": [
         {
           "answer": "The year that Singapore gained their independence from Malaysia",
@@ -146,5 +146,5 @@
     }
   ],
   "scores": [100, 300, 500, 700, 1000],
-  "title": "Student Council Jeopardy"
+  "title": "Student Council Grade 8 & 9 Jeopardy"
 }

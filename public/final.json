@@ -1,0 +1,146 @@
+{
+  "sets": [
+    {
+      "name": "Sports",
+      "questions": [
+        {
+          "answer": "This type of skill in badminton is carried out by striking the shuttlecock with great force on a sharp trajectory downwards to aim to score a point. ",
+          "question": "What is a Smash?"
+        },
+
+        {
+          "answer": "This position in some invasion games has the role of preventing a ball in entering a goal.",
+          "question": "What is a Goalkeeper?"
+        },
+
+        {
+          "answer": "The Jamaican sprinter is widely known as one of the greatest sprinters of all time. He holds world records in the 100 metre sprint, 200 metre sprint, and more. He is known as one of the fastest people on the earth.",
+          "question": "Who is Usain Bolt?"
+        },
+
+        {
+          "answer": "This sport is one that is incredibly popular in India. The top ranking countries that play this sport are Australia, New Zealand, India, and England. This sport is played with a bat, a ball and a wicket.",
+          "question": "What is Cricket?"
+        },
+
+        {
+          "answer": "This top part of a goal in sports such as football, rugby and hockey helps form the borders of a goal.",
+          "question": "What is a Crossbar?"
+        }
+      ]
+    },
+    {
+      "name": "Mythology",
+      "questions": [
+        {
+          "answer": "This place has been described in many different mythologies, mainly as an afterlife location where evil souls are punished for their sins during their lifetime eternally and tortured.",
+          "question": "What is Hell or Underworld?"
+        },
+        {
+          "answer": "This Roman hero and god was the illegitimate son of Jupiter, the Roman god of the sky. He was known for his extreme strength and the adventures to atone for the sins of brutally murdering his family members after being induced into a rage by Hera.",
+          "question": "Who is Hercules?"
+        },
+
+        {
+          "answer": "This Titan god of fire and the son of Iapetus and Clymene who was also known as Themis. This Titan was punished for gifting fire to mankind by being chained and having his immortal liver consumed by an eagle until Heracles killed the eagle with the permission of Zeus, who was also the one who punished this Titan.",
+          "question": "Who is Prometheus?"
+        },
+        {
+          "answer": "This goddess associated with Buddhism was once a male Indian deity but was eventually transformed. This is the Buddhist goddess of compassion and mercy.",
+          "question": "Who is Guanyin?"
+        },
+        {
+          "answer": "This god in Indian mythology is often depicted with blue skin with 4 hands. This god preserves the universe and prevents it from being destroyed who has come to Earth in 9 different forms known as avatars. ",
+          "question": "Who is Vishnu the Preserver?"
+        }
+      ]
+    },
+    {
+      "name": "Teachers",
+      "questions": [
+        {
+          "answer": "This PE teacher was once a professional super rugby player and continues to coach the sport. This teacher was once a housemate of the Australian Show Big Brother.",
+          "question": "Who is Mr. Hoo?"
+        },
+
+        {
+          "answer": "This teacher studied in Griffith University in America and has a Master of Education. This teacher was once an actress in Peel the Limelight and a principal in the KinderWorld Education group.",
+          "question": "Who is Ms. Manson?"
+        },
+
+        {
+          "answer": "This science teacher wrote and directed a musical play in 2002-2003 at Springwell Junior School for Year 3 students and has a Master and Bachelor of Education. They enjoy service work.",
+          "question": "Who is Ms. Begg?"
+        },
+
+        {
+          "answer": "This visual arts teacher once taught at Sinarmas World Academy for Primary Years students. This teacher used to teach PYP students and has a Bachelor of Arts.",
+          "question": "Who is Ms. Roberts?"
+        },
+
+        {
+          "answer": "This teacher has a Master and Bachelor of the Arts and studied at the University of Bath and University of the Arts in London.",
+          "question": "Who is Ms. Millington?"
+        }
+      ]
+    },
+    {
+      "name": "Singapore",
+      "questions": [
+        {
+          "answer": "This multinational company originating from Singapore provides services in multiple sectors including transportation and food delivery. This company was founded by Anthony Tan and Tan Hooi Ling headquarters in Queenstown.",
+          "question": "What is Grab?"
+        },
+
+        {
+          "answer": "This transportation system that uses tracks in Singapore was founded in 1987.",
+          "question": "What is the MRT?"
+        },
+
+        {
+          "answer": "This animal is sacred and symbolic of Singaporean culture, and is part of the derivation of the name of Singapore in the Sanskrit language. It makes up half of a Singapore icon.",
+          "question": "What is a Lion?"
+        },
+
+        {
+          "answer": "A local dish of Singapore, Malaysia, Indonesia and Brunei which has a name that literally translates to stir-fried flat rice noodles from Hokkien. ",
+          "question": "What is Char kway teow?"
+        },
+        {
+          "answer": "This Singaporean billionaire is one of the richest people in the country, and is the owner of Hai Di Lao, a chain of hot pot restaurants.",
+          "question": "Who is Zhang Yong?"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "questions": [
+        {
+          "answer": "This music genre, famous during the 1920s, first originated in New Orleans, in the United States. This genre typically includes instruments such as the saxophone, the trumpet, the clarinet, and others.",
+          "question": "What is Jazz?"
+        },
+
+        {
+          "answer": "This audio processor which is often used in musical works was first introduced in 1997 by Antares Audio Technologies. This is a processor that alters instrumental or vocal pitch of music to make it sound better.",
+          "question": "What is Autotune?"
+        },
+
+        {
+          "answer": "This software for creating music was developed by Apple in 2004, and is part of the iLife software suite. This music creation studio runs on MacOS with a full range of digital instruments to create music digitally. ",
+          "question": "What is Garageband?"
+        },
+        {
+          "answer": "This popular album in 2020 includes songs such as Don’t Start Now and Hallucinate. This is the second studio album of English singer Dua Lipa.",
+          "question": "What is Future Nostalgia?"
+        },
+
+        {
+          "answer": "This artist was one of the first famous pop stars and was a very influential figure of the 20th century. This is a American singer of “My Way” and “Strangers in the Night”.",
+          "question": "What is Frank Sinatra?"
+        }
+      ]
+    }
+  ],
+  "scores": [100, 300, 500, 700, 1000],
+  "title": "Student Council Final Jeopardy"
+}
