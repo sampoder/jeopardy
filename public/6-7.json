@@ -1,0 +1,171 @@
+{
+  "sets": [
+    {
+      "name": "Mythology",
+      "questions": [
+        {
+          "answer": "In Greek mythology, what mythological creatures are half goat and half human?",
+          "question": "What is a Satyr(s)?"
+        },
+
+        {
+          "answer": "The cinematic universe of Marvel has adapted the story of this Norse god of thunder, the sky, and agriculture. This god who owns the hammer Mjolnir.",
+          "question": "Who is Thor?"
+        },
+
+        {
+          "answer": "The Roman god of war. Shares his name with the fourth planet from the sun and is the Roman counterpart of the Greek god Ares.",
+          "question": "Who is Mars?"
+        },
+
+        {
+          "answer": "A mythological creature originating from a central region of Romania. They are immortal and nocturnal creatures, and do not have a reflection when facing a mirror.",
+          "question": "What is a Vampire?"
+        },
+
+        {
+          "answer": "This demigod was gifted a magic fish hook by the gods after being abandoned by his parents and has the ability to shape shift. This demigod appears in a Disney film in 2016 featuring a young girl who sails on a mission to save her people.",
+          "question": "Who is Maui?"
+        },
+        {
+          "answer": "A religious myth to several cultures centers around the life of this man whose original name was Yeshua in Hebrew. This religious leader and central figure of Christianity was born in a stable in Bethlehem also referred to as an incarnation of God. ",
+          "question": "Who is Jesus Christ?"
+        }
+      ]
+    },
+    {
+      "name": "Television Works",
+      "questions": [
+        {
+          "answer": "This romance 1997 film was directed by James Cameron and lasts 3 hours and 30 minutes.This movie was named after a ship that met a disaster that took place in 1912 in the North Atlantic Ocean.",
+          "question": "What is the Titanic?"
+        },
+
+        {
+          "answer": "This American game show is simple, but has a twist where the questions are given and contestants have to question with a answer. In this show three contestants compete to question answers to earn prize money in six categories of answers.",
+          "question": "What is Jeopardy?"
+        },
+
+        {
+          "answer": "This horror film focuses on the investigation of a suicide of a member of the church in Romania after she was pursued by an evil presence which killed a sister of the church. This film released in 2018 that is named after the occupation of the victim of suicide.",
+          "question": "What is The Nun?"
+        },
+
+        {
+          "answer": "This Australian actor who gained popularity in the show Home and Away before beginning his film career in Hollywood. This famous actor recently starred in the show Extraction and plays Thor in the Marvel movies.",
+          "question": "Who is Chris Hemsworth?"
+        },
+
+        {
+          "answer": "This cinematic universe originated from a series of comic books that were popular with the first comic being released in 1938. This cinematic universe is where the Flash series, Batman vs Superman, and the Justice League occur in.",
+          "question": "What is DC or Detective Comics?"
+        },
+        {
+          "answer": "This production company headquartered in California was founded in 1997 by Reed Hastings and Marc Randolph. This is famous platform where you can view a wide variety of shows and chill at home!",
+          "question": "What is Netflix?"
+        }
+      ]
+    },
+    {
+      "name": "Food",
+      "questions": [
+        {
+          "answer": "This noodle dish originated from Chinese wheat noodles normally consisting of a soup stock based on chicken or pork, noodles, and toppings such as Chashu, Menma and Ajitama.",
+          "question": "What is Ramen?"
+        },
+
+        {
+          "answer": "The cuisine of this country ranks as the top of the world, using the main ingredients of olive oil, garlic, tomatoes, anchovies and more. This country is widely known for its main dishes pizza and pasta.",
+          "question": "What is Italy?"
+        },
+
+        {
+          "answer": "This seasoning was first known to be harvested in China as far back as 6000BC. It is also a mineral used for tanning, dyeing, bleaching, and many other uses aside from flavoring and preserving food.",
+          "question": "What is Salt?"
+        },
+
+        {
+          "answer": "This type of French egg dish is known to have a fluffy texture and is named after a type of cake. This dish is made by beating the egg white and yolk separately and combining it to create a fluffy and light omelette.",
+          "question": "What is an Souffle Omelette?"
+        },
+
+        {
+          "answer": "A category of foods used to mean food in general. Currently means food that is obtained from the body parts of animals.",
+          "question": "What is Meat "
+        },
+        {
+          "answer": "This bizarre dish in America is a sandwich containing a certain organ found in animals which is fried and served with bread and other ingredients. This sandwich is popular in Ohio River Valley and contains the organ that functions as the center of the nervous system.",
+          "question": "What is a Fried brain sandwich?"
+        }
+      ]
+    },
+    {
+      "name": "Pop Music",
+      "questions": [
+        {
+          "answer": "A famous, American singer from the 1980s, has been dubbed the title the “King of Pop”.",
+          "question": "Who is Michael Jackson?"
+        },
+
+        {
+          "answer": "This artist dreams of writing a soundtrack for Disney, but has already achieved many awards, such as the Best-Selling Global Artist of the Year in 2017. This British artist wrote the hit song “Shape of You”.",
+          "question": "Who is Ed Sheeran?"
+        },
+        {
+          "answer": "A singer-songwriter that appeared on the show ‘Barney and Friends’ at age 7. This singer-songwriter sang “Lose You to Love Me” and Wolves with Marshmello.",
+          "question": "Who is Selena Gomez?"
+        },
+
+        {
+          "answer": "This Korean boy band group made of 7 people was founded in 2010 and is widely claimed to be the best K-pop group. Their fanbase is known as “the ARMY.” They recently released the song “Dynamite”.",
+          "question": "What is BTS?"
+        },
+
+        {
+          "answer": "This famous American singer began her singing career at the age of 15, and went on to star in the Broadway musical named, “13.” She is well known for her incredibly high pitched singing voice, and is recognized by her iconic high ponytail.",
+          "question": "Who is Ariana Grande?"
+        },
+
+        {
+          "answer": "This singer-songwriter won the Academy Award for Best Original Song in 2015. They wrote “All Of Me”.",
+          "question": "Who is John Legend?"
+        }
+      ]
+    },
+    {
+      "name": "Video Games",
+      "questions": [
+        {
+          "answer": "A video game studio which developed many famous game series such as Fallout, The Elder Scrolls or Doom.",
+          "question": "What is Bethesda Softworks?"
+        },
+
+        {
+          "answer": "A series of video games where the player needs to capture and train fictional creatures inspired from real world animals or objects and make them fight against other characters to achieve the title of “Master”.",
+          "question": "What is Pokemon?"
+        },
+
+        {
+          "answer": "A game famous for its “Nuclear Gandhi” bug where the AI Gandhi would start nuking everyone once he reached the modern age.",
+          "question": "What is Sid Meier’s Civilization?"
+        },
+
+        {
+          "answer": "An american game company is famous for its aggressive use of in-game purchases and loot boxes in its games and develops and publishes games such as Battlefield, The Sims, Mass Effect and Fifa.",
+          "question": "What is EA Games?"
+        },
+
+        {
+          "answer": "An American writer who figures in the titles of more than 40 video games and helped in the creation of many tactical shooter games inspired by his books before selling the copyright of his name to Ubisoft to continue using it even after his death.",
+          "question": "Who is Tom Clancy?"
+        },
+        {
+          "answer": "An online video game based on a series of successful real-time strategy games and released in 2004 by Blizzard becoming one of the most popular MMOs of all times.",
+          "question": "What is World of Warcraft?"
+        }
+      ]
+    }
+  ],
+  "scores": [100, 300, 500, 700, 1000],
+  "title": "Student Council Jeopardy"
+}

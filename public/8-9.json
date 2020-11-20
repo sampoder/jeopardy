@@ -1,0 +1,150 @@
+{
+  "sets": [
+    {
+      "name": "Sam",
+      "questions": [
+        {
+          "answer": "This person was a judge for the cooking show the Great British Bake Off from 2010 to 2016 but left with Sue Perkins and Mel Giedroyc when the show was moved to Channel 4 from the BBC channel and was succeeded by Prue Leith.",
+          "question": "Who is Mary Berry?"
+        },
+
+        {
+          "answer": "A plate of this food contains about 600 calories. This famous Singaporean dish uses mainly rice, chicken stock, and a sauce.",
+          "question": "What is Chicken Rice?"
+        },
+
+        {
+          "answer": "This food is often accompanied by milk and is a traditional breakfast around the world, though primarily in the Western world.",
+          "question": "What is Cereal?"
+        },
+
+        {
+          "answer": "This company is very popular and famous for its several soft drinks, and made the most popular soft drink in the world. Their products include Sprite, Fanta and Coca Cola.",
+          "question": "What is Coca Cola?"
+        },
+
+        {
+          "answer": "This fast food pizza outlet famously produced an ad featuring Mikhail Gorbachev. Originating from Kansas, this pizza outlet that is known for its red colour scheme and was introduced to the USSR in 1990.",
+          "question": "What is Pizza Hut?"
+        }
+      ]
+    },
+    {
+      "name": "Video Games",
+      "questions": [
+        {
+          "answer": "A company which released the most successful game console of all times and whose main competitor is Microsoft and their Xbox consoles.",
+          "question": "What is Sony?"
+        },
+        {
+          "answer": "The name of an american video game company famous for a very popular MOBA game released in 2009 and creator of Teamfight Tactics, Valorant and League of Legends.",
+          "question": "What is Riot Games?"
+        },
+
+        {
+          "answer": "A series of futuristic FPS video games is mostly set in the year 2552 during a war between humanity and an alliance of alien races where the main character, Master Chief, fights an alien faction named the Covenant.",
+          "question": "What is Halo?"
+        },
+
+        {
+          "answer": "Siege or Valorant to designate when a player eliminates the entire enemy team by themselves.",
+          "question": "What is an Ace?"
+        },
+
+        {
+          "answer": "A video game created by a swedish developer in 2011 with two main game modes, survival and creative."
+        },
+        { "answer": "What is Minecraft?" }
+      ]
+    },
+    {
+      "name": "Sports",
+      "questions": [
+        {
+          "answer": "This sport originated in England during the 12th century, where citizens would play in meadows and roads by kicking and punching a ball. This invasion game has the most fans in the world with 3.5 billion estimated fans!",
+          "question": "What is Soccer or Football?"
+        },
+
+        {
+          "answer": "This position of a sport where you score by putting the ball into a basket is the team’s designated shooter. This player is only able to access the offensive third of the court. This is a position which attacks with the Goal Attack, Wing Attack and Center to score baskets in netball.",
+          "question": "What is a Goal Shooter?"
+        },
+
+        {
+          "answer": "This famous 1.91 meter basketball player was born in the same hospital as Lebron James. He is the son of two former athletes, one who was a college volleyball player, and one who played in the NBA for 16 seasons. This famous basketball player is known for his extraordinary 3 pointers and was the first to win the MVP award in a unanimous decision in 2016.",
+          "question": "Who is Stephen Curry?"
+        },
+
+        {
+          "answer": "This position of volleyball usually requires strong communication skills and is responsible for directing the offence. This player that makes quick decisions on the court that aim to receive the second touch and to pass the ball to an attacking player.",
+          "question": "What is a Setter?"
+        },
+
+        {
+          "answer": "A sport in Australia where you score by kicking the ball through two goal posts and pass the ball by handballing or kicking the ball.",
+          "question": "What is AFL?"
+        }
+      ]
+    },
+    {
+      "name": "Teacher facts",
+      "questions": [
+        {
+          "answer": "This staff member teaches the Theory of Knowledge to Grade 11 and 12 students and studied in the University of Arkansas, University of Northern Iowa, and Hendrix College.",
+          "question": "Who is Mr. McAuley?"
+        },
+
+        {
+          "answer": "This teacher has a Bachelor of Science from the University of Arizona and was once Vice Principal of Beanstalk International Bilingual School.",
+          "question": "Who is Mr. Chao?"
+        },
+
+        {
+          "answer": "This teacher teaches the Theory of Knowledge for  Grade 11 and 12 students and studied in the State University of New York.",
+          "question": "Who is Mr. Stipek?"
+        },
+
+        {
+          "answer": "This teacher studied at Ateneo de Manila and the Polytechnic University of the Philippines. They have expressed a lot of love for a restaurant named Vikings.",
+          "question": "Who is Mr. Gutierrez?"
+        },
+
+        {
+          "answer": "This teacher with a Bachelor of Arts taught Visual Arts in the Osaka YMCA International School. They love winning shiny things and debating.",
+          "question": "Who is Ms. Carte?"
+        }
+      ]
+    },
+    {
+      "name": "Sam",
+      "questions": [
+        {
+          "answer": "The year that Singapore gained their independence from Malaysia",
+          "question": "What is 1965?"
+        },
+
+        {
+          "answer": "The original name for Singapore.",
+          "question": "What is Temasek?"
+        },
+
+        {
+          "answer": "This Singaporean multinational telecommunication company was founded in 1879 by Chua Sock Koong.",
+          "question": "What is Singtel?"
+        },
+
+        {
+          "answer": "This mythical creature is seen as an icon of Singapore and is found in structures across Singapore in places such as Ang Mo Kio.",
+          "question": "What is The Merlion?"
+        },
+
+        {
+          "answer": "This popular tourist attraction in Singapore is the world’s first nocturnal zoo, and was first suggested by the former executive chairman of the Singapore Zoo.",
+          "question": "What is the Night Safari?"
+        }
+      ]
+    }
+  ],
+  "scores": [100, 300, 500, 700, 1000],
+  "title": "Student Council Jeopardy"
+}
